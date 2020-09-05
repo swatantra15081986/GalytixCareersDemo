@@ -1,0 +1,35 @@
+{
+  "name": "wms2.0_ui_automation",
+  "version": "2.0.0",
+  "description": "WMS Automation Framework",
+  "main": "conf.js",
+  "dependencies": {
+    "@types/jasmine": "^3.5.0",
+    "jasmine": "^3.5.0",
+    "jasmine-allure-reporter": "^1.0.2",
+    "log4js": "^6.1.0",
+    "moment": "^2.24.0",
+    "node-fetch": "^2.6.0",
+    "papaparse": "^5.1.1",
+    "protractor-beautiful-reporter": "^1.3.6",
+    "protractor-jasmine2-html-reporter": "0.0.7",
+    "require-reload": "^0.2.2"
+  },
+  "devDependencies": {
+    "allure-commandline": "^2.13.0"
+  },
+  "scripts": {
+    "#pretest": "rm -rf allure-report",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "qasanity": "ENV=qa protractor conf.js --suite sanity",
+    "qa2sanity": "ENV=qa2 protractor conf.js --suite sanity",
+    "prodsanity": "ENV=prod protractor conf.js --suite sanity",
+    "#posttest": "allure generate allure-results --clean -o allure-report || true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/DelhiveryTech/wms2-ui-automation/"
+  },
+  "author": "Rajinder Manhas",
+  "license": "ISC"
+}

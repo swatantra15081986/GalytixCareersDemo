@@ -1,0 +1,8 @@
+.idea/
+reports/
+node_modules/
+data/WMS/orderFile/*.csv
+data/WMS/*.json
+allure-report/
+allure-results/
+console.log
