@@ -4,6 +4,7 @@
   "description": "WMS Automation Framework",
   "main": "conf.js",
   "dependencies": {
+    "@angular-devkit/schematics": "^10.1.0",
     "@types/jasmine": "^3.5.0",
     "jasmine": "^3.5.0",
     "jasmine-allure-reporter": "^1.0.2",

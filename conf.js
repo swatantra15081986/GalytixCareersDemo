@@ -40,7 +40,7 @@ exports.config = {
             screenshotsSubfolder: 'images',
             jsonsSubfolder: 'jsons',
             takeScreenShotsOnlyForFailedSpecs: true,
-            docTitle: 'WMS Test Report',
+            docTitle: 'Galytix-Careers Test Report',
             preserveDirectory: false,
             clientDefaults: {
                 columnSettings: {

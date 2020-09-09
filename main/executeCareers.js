@@ -20,7 +20,7 @@ describe("CAREERS", () => {
          browser.get(data.baseURL) 
       });
 
-    it("Senior software developer-Gurgaon Form submission", async () => {
+    it("Senior software developer-Gurgaon Form should be submitted after enter all mandat fields ", async () => {
 
         
         await elementcareers1.sse.click()
@@ -31,12 +31,12 @@ describe("CAREERS", () => {
         await elementcareers1.firstName.sendKeys(data.firstName[0])
         await elementcareers1.email.sendKeys(data.email[0])
         await elementcareers1.applynow.click()
-        expect(elementcareers1.verifysubmit.getText()).toEqual("Application submitted");
+        expect(elementcareers1.verifysubmit.getText()).toEqual(data.messages[0]);
 
 
     });
 
-    it("Senior software developer-UK Form submission", async () => {
+    it("Senior software developer-UK Form should be submitted after enter all mandat fields", async () => {
 
        
 
@@ -49,10 +49,10 @@ describe("CAREERS", () => {
         await elementcareers1.firstName.sendKeys(data.firstName[0])
         await elementcareers1.email.sendKeys(data.email[0])
         await elementcareers1.applynow.click()
-        expect(elementcareers1.verifysubmit.getText()).toEqual("Application submitted");
+        expect(elementcareers1.verifysubmit.getText()).toEqual(data.messages[0]);
     });
 
-    it("Testing Engineer-GURGAON Form submission", async () => {
+    it("Testing Engineer-GURGAON Form should be submitted after enter all mandat fields", async () => {
 
        
 
@@ -64,10 +64,10 @@ describe("CAREERS", () => {
         await elementcareers1.firstName.sendKeys(data.firstName[0])
         await elementcareers1.email.sendKeys(data.email[0])
         await elementcareers1.applynow.click()
-        expect(elementcareers1.verifysubmit.getText()).toEqual("Application submitted");
+        expect(elementcareers1.verifysubmit.getText()).toEqual(data.messages[0]);
     });
 
-    it("Testing Engineer-UK Form submission", async () => {
+    it("Testing Engineer-UK Form should be submitted after enter all mandat fields", async () => {
 
        
 
@@ -79,10 +79,10 @@ describe("CAREERS", () => {
         await elementcareers1.firstName.sendKeys(data.firstName[0])
         await elementcareers1.email.sendKeys(data.email[0])
         await elementcareers1.applynow.click()
-        expect(elementcareers1.verifysubmit.getText()).toEqual("Application submitted");
+        expect(elementcareers1.verifysubmit.getText()).toEqual(data.messages[0]);
     });
 
-    it("Sr web designer-Gurgaon Form submission", async () => {
+    it("Sr web designer-Gurgaon Form should not be submitted after enter all mandat fields", async () => {
 
        
 
@@ -94,10 +94,10 @@ describe("CAREERS", () => {
         await elementcareers1.firstName.sendKeys(data.firstName[0])
         await elementcareers1.email.sendKeys(data.email[0])
         await elementcareers1.applynow.click()
-        expect(elementcareers1.verifysubmit2.getText()).toEqual("There was an error submitting the application");
+        expect(elementcareers1.verifysubmit2.getText()).toEqual(data.messages[1]);
     });
 
-    it("Sr web designer-UK Form submission", async () => {
+    it("Sr web designer-UK Form should be submitted after enter all mandat fields", async () => {
 
        
 
@@ -109,7 +109,7 @@ describe("CAREERS", () => {
         await elementcareers1.firstName.sendKeys(data.firstName[0])
         await elementcareers1.email.sendKeys(data.email[0])
         await elementcareers1.applynow.click()
-        expect(elementcareers1.verifysubmit.getText()).toEqual("Application submitted");
+        expect(elementcareers1.verifysubmit.getText()).toEqual(data.messages[0]);
     });
 
 });

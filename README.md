@@ -2,8 +2,8 @@
 
 ### What is this repository for? ###
 
-* WMS 2.0 UI Automation
-* Version 1.0
+* Galytix Careers UI Automation
+
 
 ### What are prerequisites? ###
 
@@ -18,7 +18,7 @@
 * webdriver-manager update
 * webdriver-manager start (Standalone server)
 * npm install
-* ENV=*qa/release* protractor conf.js --suite *SuiteName* //Run particular suite
+* protractor conf.js 
 
 ### Contribution guidelines ###
 
@@ -27,4 +27,4 @@
 
 ### Who do I talk to? ###
 
-* Rajinder Manhas
+* Swatantra Srivastava
